@@ -1,0 +1,40 @@
+{                        
+    "name":"http-request",
+    "short_description":"perform http request",
+    "full_description":"perform http request",
+    "repository": {
+        "type":"git",
+        "url":"https://github.com/kritpunpreuk/do-http-request"
+    },
+    "keywords":["http-request","do","http","request"],
+    "type":"do",
+    "author":"Krit Punpreuk",
+    "license":"",
+    "homepage":"https://github.com/kritpunpreuk/do-http-request",
+    "parameter" : [
+        {
+            "name":"url",
+            "type":"string",
+            "description":"URL to make a http request"
+        },
+        {
+            "name":"encoding",
+            "type":"options",
+            "options":["json","binary"],
+            "description":"Encoding option"
+        },
+        {
+            "name":"method",
+            "type":"options",
+            "options":["GET","POST","PUT","DELETE"],
+            "description":"http method option"
+        },
+        {
+            "name":"body",
+            "type":"json",
+            "description":"json body"
+        }
+    ],
+    "plugin_version":"1.2",        
+    "base":"1.0"                
+}                        
