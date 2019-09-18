@@ -7,13 +7,13 @@ Post content to Discord Channal via Discord webhook
 data_out": {
   "type": "http-request",
   "param": {
-  "url": "${meta.webhook}",
+  "url": "${data.webhook}",
   "method": "POST",
   "encoding": "json",
   "headers": {
     "content-type": "application/json"
   },
-  "body": "{ \"username\": \"${meta.name}\", \"content\": \"${data.msg}\"}"
+  "body": "{ \"username\": \"${data.name}\", \"content\": \"${data.msg}\"}"
   }
 }
 ```
